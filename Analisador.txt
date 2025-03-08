@@ -1,0 +1,5 @@
+Você vai retornar quantos produtos foram retornados como apto para venda e não apto para venda
+
+Você vai retornar quantos produtos tem no arquivo 
+
+no final você pergunta ao usuario se todos os produtos foram classificados corretamente 
