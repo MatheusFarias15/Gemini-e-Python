@@ -2,7 +2,7 @@ import os
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-with open("instrucao.txt", "r", encoding="utf-8") as file:
+with open("Prompt\instrucao.txt", "r", encoding="utf-8") as file:
     resumo = file.read()
 
 load_dotenv()
@@ -17,7 +17,7 @@ llm = genai.GenerativeModel(
 )
 
 while True:
-    pergunta = input("Digite sua pergunta (ou pressione Enter para sair): ")
+    pergunta = input("Digite sua pergunta (ou pressione Enter para sair): \n ")
     if pergunta.strip() == "":
         print("Tchau! Precisando estou a disposição ")
         break

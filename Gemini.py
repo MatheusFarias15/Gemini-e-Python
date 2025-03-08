@@ -3,7 +3,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 
 # Corrigindo a leitura do arquivo TXT
-with open("instrucao.txt", "r", encoding="utf-8") as file:
+with open("Prompt\instrucao.txt", "r", encoding="utf-8") as file:
     instrucoes = file.read()
 
 load_dotenv()

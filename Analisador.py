@@ -9,7 +9,7 @@ genai.configure(api_key=chave_api_google)
 modelo_escolhido = "gemini-1.5-flash"
 
 # Carregar instruções do analisador
-with open("Analisador.txt", "r", encoding="utf-8") as file:
+with open("Prompt\Analisador.txt", "r", encoding="utf-8") as file:
     Analisador = file.read()
 
 # Criar o modelo
@@ -20,7 +20,7 @@ model = genai.GenerativeModel(
 
 def carregar_modelo(nome_do_arquivo):
     try:
-        with open(nome_do_arquivo, "r", encoding="utf-8") as arquivo:  # ✅ Corrigido
+        with open(nome_do_arquivo, "r", encoding="utf-8") as arquivo: 
             return arquivo.read()
     except IOError as e:
         print(f"Erro ao carregar o arquivo {nome_do_arquivo}: {e}")
